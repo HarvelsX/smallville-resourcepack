@@ -84,6 +84,8 @@ jobs:
         with:
           name: "v${{ steps.info.outputs.version }}"
           artifacts: "${{ steps.download.outputs.download-path }}/${{ needs.build.outputs.package }}.zip"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Discord Publish
         uses: tsickert/discord-webhook@v5.3.0
