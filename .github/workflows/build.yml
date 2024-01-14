@@ -79,11 +79,14 @@ jobs:
         with:
           name: ${{ needs.build.outputs.artifact }}
 
+      - name: Copy Optimized Pack
+        run: cp ${{ steps.download.outputs.download-path }}/${{ needs.build.outputs.package }}.zip ${{ needs.build.outputs.name }}.zip
+
       - name: Github Release
         uses: ncipollo/release-action@v1
         with:
           name: "v${{ needs.build.outputs.version }}"
-          artifacts: "${{ steps.download.outputs.download-path }}/${{ needs.build.outputs.package }}.zip"
+          artifacts: "${{ needs.build.outputs.name }}.zip"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
