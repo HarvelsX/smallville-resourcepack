@@ -12,7 +12,7 @@
     },
     {
       "type": "bitmap",
-      "file": "goldenmc:gui/logo.png",
+      "file": "smallville:gui/logo.png",
       "ascent": 32,
       "height": 52,
       "chars": [
@@ -21,7 +21,7 @@
     },
     {
       "type": "bitmap",
-      "file": "goldenmc:gui/logo.png",
+      "file": "smallville:gui/logo.png",
       "ascent": 32,
       "height": 42,
       "chars": [
