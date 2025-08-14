@@ -2,31 +2,23 @@
   "providers": [
     {
       "type": "bitmap",
-      "file": "smallville:icons/subscribers.png",
+      "file": "smallville:icons/monets.png",
       "ascent": 7,
-      "chars": [
-        "\uE000\uE001\uE002\uE003",
-        "\uE004\uE005\uE006\uE007",
-        "\uE008\uE009\uE010\uE011"
-      ]
+      "chars": ["\uE000\uE001"]
     },
     {
       "type": "bitmap",
       "file": "smallville:gui/logo.png",
       "ascent": 32,
       "height": 52,
-      "chars": [
-        "\uE100"
-      ]
+      "chars": ["\uE100"]
     },
     {
       "type": "bitmap",
       "file": "smallville:gui/logo.png",
       "ascent": 32,
       "height": 42,
-      "chars": [
-        "\uE200"
-      ]
+      "chars": ["\uE200"]
     }
   ]
 }
