@@ -1,0 +1,55 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/filled_map"
+    },
+    "cases": [
+      {
+        "when": "smallville:ace_clubs",
+        "model": {
+          "type": "minecraft:model",
+          "model": "smallville:item/cards/ace_clubs"
+        }
+      },
+      {
+        "when": "smallville:ace_diamonds",
+        "model": {
+          "type": "minecraft:model",
+          "model": "smallville:item/cards/ace_diamonds"
+        }
+      },
+      {
+        "when": "smallville:ace_hearts",
+        "model": {
+          "type": "minecraft:model",
+          "model": "smallville:item/cards/ace_hearts"
+        }
+      },
+      {
+        "when": "smallville:ace_spades",
+        "model": {
+          "type": "minecraft:model",
+          "model": "smallville:item/cards/ace_spades"
+        }
+      },
+      {
+        "when": "smallville:jokerge",
+        "model": {
+          "oversized_in_gui": true,
+          "type": "minecraft:model",
+          "model": "smallville:item/cards/jokerge"
+        }
+      },
+      {
+        "when": "smallville:triple",
+        "model": {
+          "type": "minecraft:model",
+          "model": "smallville:item/cards/triple"
+        }
+      }
+    ]
+  }
+}
